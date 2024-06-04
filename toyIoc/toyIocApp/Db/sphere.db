@@ -1,0 +1,20 @@
+record(ai, "$(P):X1") {
+    field(DESC, "First Input")
+    field(VAL , 0)
+    field(PREC, "2")
+}
+
+record(ai, "$(P):X2") {
+    field(DESC, "Second Input")
+    field(VAL , 0)
+    field(PREC, "2")
+}
+
+record(calc, "$(P):F") {
+    field(DESC, "Function Output")
+    field(VAL , 0)
+    field(CALC, "sqrt(A*A+B*B)")
+    field(INPA, "$(P):X1 CPP")
+    field(INPB, "$(P):X2 CPP")
+    field(PREC, "2")
+}
