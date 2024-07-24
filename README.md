@@ -4,6 +4,10 @@ Make sure you [have epics installed](https://docs.epics-controls.org/en/latest/g
 
 ## Compile toyIoc
 
+First you'll need to modify the `EPICS_BASE` value (at line 32) in `toyIoc/configure/RELEASE` to the correct `EPICS_BASE` env var you set on your system when you followed the EPICS installation guide. Usually it looks like `${HOME}/EPICS/epics-base`, here `${HOME}` is your home directory if you are working on a Unix-based OS.
+
+Then simply do:
+
 ```bash
 cd toyIoc
 make
